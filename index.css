@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input {
+  width: 250px;
+  height: 50px;
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+form {
+  position: relative;
+}
+.input input {
+  height: 50px;
+  width: 300px;
+  font-family: sans-serif;
+  background: white;
+  outline: none;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  font-weight: 600;
+  padding-left: 7px;
+  font-size: 21px;
+}
+.input label {
+  position: absolute;
+  width: 90px;
+  text-align: center;
+  left: 15px;
+  top: 15px;
+  font-weight: 600;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: 0.4s all;
+  font-size: 20px;
+  font-family: sans-serif;
+  cursor: text;
+}
+.input input:focus ~ label,
+.input input:valid ~ label {
+  width: 100.4px;
+  height: auto;
+  font-size: 15px;
+  left: 10px;
+  top: -10px;
+  cursor: default;
+  background: white;
+}
+.input input:focus {
+  border: 3px solid #d30000;
+  color: #d30000;
+}
+.input input[minlength]:valid {
+  border: 3px solid green;
+  color: green;
+}
+.input_center {
+  width: 450px;
+  height: 350px;
+  padding: 40px;
+  padding-left: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: silver;
+  display: none;
+}
+.btn {
+  width: 200px;
+  height: 40px;
+}
+
+.active {
+  display: block;
+}
+.btn1 {
+  width: 150px;
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 16px;
+}
+figcaption {
+  font-size: 30px;
+  line-height: 40px;
+  color: black;
+  width: 300px;
+  text-align: center;
+}
