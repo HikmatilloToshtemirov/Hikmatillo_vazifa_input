@@ -84,6 +84,7 @@ form {
   height: 40px;
   border: 2px solid red;
   border-radius: 16px;
+  margin: 0 auto;
 }
 figcaption {
   font-size: 30px;
@@ -91,4 +92,46 @@ figcaption {
   color: black;
   width: 300px;
   text-align: center;
+}
+@media screen and (max-width: 466px) {
+  .input_center {
+    width: 400px;
+    padding-left: 70px;
+  }
+}
+@media screen and (max-width: 406px) {
+  .input_center {
+    width: 350px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .input_center {
+    width: 300px;
+    padding-left: 30px;
+  }
+  .input input {
+    width: 200px;
+  }
+  .input label {
+    left: 30px;
+  }
+  .input input:focus ~ label,
+  .input input:valid ~ label {
+    width: 100.4px;
+    height: auto;
+    font-size: 15px;
+    left: 25px;
+    top: -10px;
+    cursor: default;
+    background: white;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  .input_center {
+    width: 270px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
 }
