@@ -35,6 +35,10 @@ btn1.addEventListener("click", (event) => {
 });
 btn.addEventListener("click", (event) => {
   alert(
-    "salom " + ismInputi.value + " " + famInputi.value + " Ro'yxatdan o'tingiz"
+    "salom " +
+      ismInputi.value +
+      " " +
+      famInputi.value +
+      " Siz ro'yxatdan o'tingiz"
   );
 });
