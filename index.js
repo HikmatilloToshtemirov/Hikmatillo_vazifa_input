@@ -33,3 +33,8 @@ btn1.addEventListener("click", (event) => {
   cardlar2.classList.add("active");
   btn.classList.add("active");
 });
+btn.addEventListener("click", (event) => {
+  alert(
+    "salom " + ismInputi.value + " " + famInputi.value + " Ro'yxatdan o'tingiz"
+  );
+});
